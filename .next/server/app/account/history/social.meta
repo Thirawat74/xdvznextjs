@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/account/layout,_N_T_/account/history/layout,_N_T_/account/history/social/layout,_N_T_/account/history/social/page,_N_T_/account/history/social"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/account/history/social/__PAGE__",
+    "/account/history/social",
+    "/account/history",
+    "/account",
+    "/_index",
+    "/_head"
+  ]
+}

@@ -1,0 +1,317 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/api/auth/qr/status/[sessionId]",
+      "regex": "^/api/auth/qr/status/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPsessionId": "nxtPsessionId"
+      },
+      "namedRegex": "^/api/auth/qr/status/(?<nxtPsessionId>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/account",
+      "regex": "^/account(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/account(?:/)?$"
+    },
+    {
+      "page": "/account/history/premium",
+      "regex": "^/account/history/premium(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/account/history/premium(?:/)?$"
+    },
+    {
+      "page": "/account/history/social",
+      "regex": "^/account/history/social(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/account/history/social(?:/)?$"
+    },
+    {
+      "page": "/account/history/topup",
+      "regex": "^/account/history/topup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/account/history/topup(?:/)?$"
+    },
+    {
+      "page": "/account/setting",
+      "regex": "^/account/setting(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/account/setting(?:/)?$"
+    },
+    {
+      "page": "/account/setting/security",
+      "regex": "^/account/setting/security(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/account/setting/security(?:/)?$"
+    },
+    {
+      "page": "/api/auth/2fa/disable",
+      "regex": "^/api/auth/2fa/disable(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/2fa/disable(?:/)?$"
+    },
+    {
+      "page": "/api/auth/2fa/setup",
+      "regex": "^/api/auth/2fa/setup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/2fa/setup(?:/)?$"
+    },
+    {
+      "page": "/api/auth/2fa/verify",
+      "regex": "^/api/auth/2fa/verify(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/2fa/verify(?:/)?$"
+    },
+    {
+      "page": "/api/auth/change-password",
+      "regex": "^/api/auth/change\\-password(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/change\\-password(?:/)?$"
+    },
+    {
+      "page": "/api/auth/logout-all",
+      "regex": "^/api/auth/logout\\-all(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/logout\\-all(?:/)?$"
+    },
+    {
+      "page": "/api/auth/qr/generate",
+      "regex": "^/api/auth/qr/generate(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/qr/generate(?:/)?$"
+    },
+    {
+      "page": "/api/auth/qr/scan",
+      "regex": "^/api/auth/qr/scan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/qr/scan(?:/)?$"
+    },
+    {
+      "page": "/api/auth/qr/verify",
+      "regex": "^/api/auth/qr/verify(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/qr/verify(?:/)?$"
+    },
+    {
+      "page": "/api/auth/update-profile",
+      "regex": "^/api/auth/update\\-profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/update\\-profile(?:/)?$"
+    },
+    {
+      "page": "/api/v1/auth",
+      "regex": "^/api/v1/auth(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/v1/auth(?:/)?$"
+    },
+    {
+      "page": "/api/v1/auth/login",
+      "regex": "^/api/v1/auth/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/v1/auth/login(?:/)?$"
+    },
+    {
+      "page": "/api/v1/auth/login/verify-2fa",
+      "regex": "^/api/v1/auth/login/verify\\-2fa(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/v1/auth/login/verify\\-2fa(?:/)?$"
+    },
+    {
+      "page": "/api/v1/auth/me",
+      "regex": "^/api/v1/auth/me(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/v1/auth/me(?:/)?$"
+    },
+    {
+      "page": "/api/v1/auth/register",
+      "regex": "^/api/v1/auth/register(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/v1/auth/register(?:/)?$"
+    },
+    {
+      "page": "/api/v1/orders/premium",
+      "regex": "^/api/v1/orders/premium(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/v1/orders/premium(?:/)?$"
+    },
+    {
+      "page": "/api/v1/orders/social",
+      "regex": "^/api/v1/orders/social(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/v1/orders/social(?:/)?$"
+    },
+    {
+      "page": "/api/v1/orders/topup",
+      "regex": "^/api/v1/orders/topup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/v1/orders/topup(?:/)?$"
+    },
+    {
+      "page": "/api/v1/premium",
+      "regex": "^/api/v1/premium(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/v1/premium(?:/)?$"
+    },
+    {
+      "page": "/api/v1/premium/buy",
+      "regex": "^/api/v1/premium/buy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/v1/premium/buy(?:/)?$"
+    },
+    {
+      "page": "/api/v1/premium/recommend",
+      "regex": "^/api/v1/premium/recommend(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/v1/premium/recommend(?:/)?$"
+    },
+    {
+      "page": "/api/v1/social",
+      "regex": "^/api/v1/social(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/v1/social(?:/)?$"
+    },
+    {
+      "page": "/api/v1/social/buy",
+      "regex": "^/api/v1/social/buy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/v1/social/buy(?:/)?$"
+    },
+    {
+      "page": "/api/v1/social/recommend",
+      "regex": "^/api/v1/social/recommend(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/v1/social/recommend(?:/)?$"
+    },
+    {
+      "page": "/api/v1/topup",
+      "regex": "^/api/v1/topup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/v1/topup(?:/)?$"
+    },
+    {
+      "page": "/api/v1/topup/buy",
+      "regex": "^/api/v1/topup/buy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/v1/topup/buy(?:/)?$"
+    },
+    {
+      "page": "/api/v1/topup/recommend",
+      "regex": "^/api/v1/topup/recommend(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/v1/topup/recommend(?:/)?$"
+    },
+    {
+      "page": "/api/verify-turnstile",
+      "regex": "^/api/verify\\-turnstile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/verify\\-turnstile(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/premium",
+      "regex": "^/premium(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/premium(?:/)?$"
+    },
+    {
+      "page": "/privacy-policy",
+      "regex": "^/privacy\\-policy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/privacy\\-policy(?:/)?$"
+    },
+    {
+      "page": "/social",
+      "regex": "^/social(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/social(?:/)?$"
+    },
+    {
+      "page": "/store",
+      "regex": "^/store(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/store(?:/)?$"
+    },
+    {
+      "page": "/terms-of-service",
+      "regex": "^/terms\\-of\\-service(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/terms\\-of\\-service(?:/)?$"
+    },
+    {
+      "page": "/topup",
+      "regex": "^/topup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/topup(?:/)?$"
+    },
+    {
+      "page": "/topupgame",
+      "regex": "^/topupgame(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/topupgame(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

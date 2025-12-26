@@ -1,0 +1,3 @@
+{
+  "/api/auth/qr/scan/route": "app/api/auth/qr/scan/route.js"
+}
